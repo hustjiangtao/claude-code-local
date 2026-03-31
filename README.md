@@ -1,5 +1,7 @@
 # claude-code-local
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/wyh0626/claude-code-local)
+
 Run Claude Code locally from source.
 
 ## Prerequisites
