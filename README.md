@@ -16,6 +16,38 @@ The source map file in the published npm package contained a reference to the fu
 
 ---
 
+## Running Locally
+
+### Prerequisites
+
+- [Bun](https://bun.sh) v1.3.11+
+- `ANTHROPIC_API_KEY` environment variable (get one from [console.anthropic.com](https://console.anthropic.com))
+
+### Steps
+
+```bash
+# 1. Clone this repo
+git clone https://github.com/wyh0626/claude-code.git
+cd claude-code
+git checkout local-runnable
+
+# 2. Install dependencies
+bun install
+
+# 3. Run
+./run.sh
+```
+
+Or use the npm script:
+
+```bash
+bun start
+```
+
+> **Note:** The `vendor-stubs/` directory contains stub implementations for Anthropic's private native modules (`@ant/computer-use-*`, `audio-capture-napi`, etc.) that are not publicly distributed. Without these stubs the dependency installation would fail.
+
+---
+
 ## Overview
 
 Claude Code is Anthropic's official CLI tool that lets you interact with Claude directly from the terminal to perform software engineering tasks — editing files, running commands, searching codebases, managing git workflows, and more.
