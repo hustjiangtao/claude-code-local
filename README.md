@@ -26,8 +26,8 @@ The source map file in the published npm package contained a reference to the fu
 ### Steps
 
 ```bash
-# 1. Clone this repo
-git clone https://github.com/wyh0626/claude-code.git
+# 1. Clone this repo and switch to the runnable branch
+git clone <this-repo>
 cd claude-code
 git checkout local-runnable
 
